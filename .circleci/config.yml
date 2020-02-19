@@ -8,7 +8,7 @@ orbs:
 jobs:
   docker-build:
     machine: true
-    working_directory: /tmp
+    working_directory: /folder
     steps:
       - checkout
       - run: mkdir -p workspace
