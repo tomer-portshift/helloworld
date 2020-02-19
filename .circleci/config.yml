@@ -5,9 +5,16 @@
 version: 2.1
 orbs:
   portshiftscanner: 'portshift-scanner/portshift@dev:0.0.1'
+jobs:
+  docker-build:
+    executor: microscanner/default
+    steps:
+      - checkout
+      - run: 'docker build -t mongo:latest .'
 workflows:
   scan-image:
     jobs:
+      - docker-build
       - portshiftscanner/scan-image:
           image_name: 'mongo'
           image_tag: 'latest'
