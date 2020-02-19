@@ -11,7 +11,7 @@ jobs:
       - image: circleci/python:2.7.14
     steps:
       - checkout
-      - run: 'docker pull mongo:latest .'
+      - run: 'docker pull mongo:latest'
 workflows:
   scan-image:
     jobs:
