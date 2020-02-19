@@ -7,7 +7,7 @@ orbs:
   portshiftscanner: 'portshift-scanner/portshift@dev:0.0.1'
 jobs:
   docker-build:
-    machine:
+    docker:
       image: circleci/classic:201808-01
     steps:
       - checkout
