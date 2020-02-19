@@ -10,7 +10,13 @@ jobs:
     machine: true
     steps:
       - checkout
+      - run: mkdir -p workspace
       - run: 'docker pull mongo:latest'
+      - run: 'docker save -o workspace/mongo.tar mongo:latest'
+      - persist_to_workspace:
+          root: workspace
+          paths:
+            - mongo.tar
 workflows:
   scan-image:
     jobs:
@@ -23,3 +29,4 @@ workflows:
           access_key: '29557d7f-b2d5-4304-934b-872033244a83'
           secret_key: '9S/b+FJ0lWrHIpt5OlQ7I8kg1pYT9YuQ1JYNrFNkC54='
           portshift_server: 'tomer5.demo.portshift.co'
+          workspace: 'workspace'
