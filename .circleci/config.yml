@@ -17,6 +17,8 @@ workflows:
     jobs:
       - docker-build
       - portshiftscanner/scan-image:
+          requires:
+            - docker-build
           image_name: 'mongo'
           image_tag: 'latest'
           access_key: '29557d7f-b2d5-4304-934b-872033244a83'
