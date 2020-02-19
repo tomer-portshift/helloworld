@@ -9,8 +9,8 @@ workflows:
   scan-image:
     jobs:
       - portshiftscanner/scan-image:
-          image_name: 'myrepo/myimage'
-          image_tag: 'tag'
-          access_key: 'key'
-          secret_key: 'key'
-          scanner_ip: 'ip'
+          image_name: 'mongo'
+          image_tag: 'latest'
+          access_key: '29557d7f-b2d5-4304-934b-872033244a83'
+          secret_key: '9S/b+FJ0lWrHIpt5OlQ7I8kg1pYT9YuQ1JYNrFNkC54='
+          portshift_server: 'tomer5.demo.portshift.co'
