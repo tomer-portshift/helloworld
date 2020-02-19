@@ -7,8 +7,7 @@ orbs:
   portshiftscanner: 'portshift-scanner/portshift@dev:0.0.1'
 jobs:
   docker-build:
-    docker:
-      - image: circleci/python:2.7.14
+    machine: true
     steps:
       - checkout
       - run: 'docker pull mongo:latest'
