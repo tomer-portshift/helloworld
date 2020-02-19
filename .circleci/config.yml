@@ -8,7 +8,7 @@ orbs:
 jobs:
   docker-build:
     docker:
-      - image: circleci/classic:201808-01
+      - image: circleci/python:2.7.14
     steps:
       - checkout
       - run: 'docker build -t mongo:latest .'
