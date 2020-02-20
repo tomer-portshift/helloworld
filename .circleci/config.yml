@@ -26,7 +26,7 @@ workflows:
             - docker-build
           image_name: 'mongo'
           image_tag: 'latest'
-          access_key: '29557d7f-b2d5-4304-934b-872033244a83'
-          secret_key: '9S/b+FJ0lWrHIpt5OlQ7I8kg1pYT9YuQ1JYNrFNkC54='
+          access_key: 'f86f7124-0cf6-40c2-8033-3f870cfd2e87'
+          secret_key: '5J1PxbmaPblrJBTRPefYV1fpxh6lSDsPmIdXvFRUFNA='
           portshift_server: 'tomer5.demo.portshift.co'
           workspace: 'workspace'
