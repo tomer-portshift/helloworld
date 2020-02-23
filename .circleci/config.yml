@@ -29,3 +29,4 @@ workflows:
           access_key: 'f86f7124-0cf6-40c2-8033-3f870cfd2e87'
           secret_key: '5J1PxbmaPblrJBTRPefYV1fpxh6lSDsPmIdXvFRUFNA='
           portshift_server: 'tomer5.demo.portshift.co'
+          image_path: mongo.tar
