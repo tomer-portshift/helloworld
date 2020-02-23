@@ -4,7 +4,7 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'portshift-scanner/portshift@dev:0.0.1'
+  portshiftscanner: 'portshift/portshift-scanner@1.0.0'
 jobs:
   docker-build:
     machine: true
