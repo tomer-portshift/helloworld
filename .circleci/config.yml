@@ -24,6 +24,7 @@ workflows:
       - portshiftscanner/scan-image:
           requires:
             - docker-build
+          context: context
           image_name: 'mongo'
           image_tag: 'latest'
           portshift_server: 'tomer5.demo.portshift.co'
