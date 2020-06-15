@@ -4,7 +4,7 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'portshift-scanner/portshift@dev:0.0.1'
+  portshiftscanner: 'portshift/portshift-scanner@2.0.1'
 jobs:
   docker-build:
     machine: true
@@ -28,4 +28,3 @@ workflows:
           image_name: 'mongo'
           image_tag: 'latest'
           portshift_server: 'tomer5.demo.portshift.co'
-          image_path: mongo.tar
