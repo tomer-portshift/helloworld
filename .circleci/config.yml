@@ -7,8 +7,9 @@ orbs:
   portshiftscanner: 'portshift/portshift-scanner@2.0.1'
 commands:
   install:
-    parameters:
-      portshift_server: 'tomer5.demo.portshift.co'
+    steps:
+      parameters:
+        portshift_server: 'tomer5.demo.portshift.co'
 workflows:
   scan-image:
     jobs:
