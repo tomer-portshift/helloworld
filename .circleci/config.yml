@@ -5,7 +5,7 @@
 version: 2.1
 orbs:
   portshiftscanner: 'portshift/portshift-scanner@2.0.1'
-jobs:
+commands:
   install:
     parameters:
       portshift_server: 'tomer5.demo.portshift.co'
