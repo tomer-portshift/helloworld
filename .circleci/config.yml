@@ -8,9 +8,9 @@ orbs:
 commands:
   install:
     steps:
-      run:
-        parameters:
-          portshift_server: 'tomer5.demo.portshift.co'
+      - run:
+          parameters:
+            portshift_server: 'tomer5.demo.portshift.co'
 workflows:
   scan-image:
     jobs:
