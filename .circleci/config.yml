@@ -4,7 +4,7 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'portshift/portshift-scanner@2.0.1'
+  portshiftscanner: 'portshift-scanner/portshift@1.1.1'
 commands:
   install:
     steps:
